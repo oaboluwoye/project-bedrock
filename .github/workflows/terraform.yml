@@ -48,6 +48,6 @@ jobs:
         if: github.event_name == 'pull_request'
         run: terraform plan -no-color -var="student_id=olaoluwa"
 
-      - name: Terraform apply
-        if: github.event_name == 'push'
-        run: terraform apply -auto-approve -var="student_id=olaoluwa"
+      # - name: Terraform apply
+      #   if: github.event_name == 'push'
+      #   run: terraform apply -auto-approve -var="student_id=olaoluwa"
